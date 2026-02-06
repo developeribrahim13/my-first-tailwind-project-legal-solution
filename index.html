@@ -1,47 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>legal solution</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>legal solution</title>
 
-    <!-- google font poppins cdn-->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- google font poppins cdn-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
-     <!-- google font EB Garamond cdn-->
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+  <!-- google font EB Garamond cdn-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+    rel="stylesheet">
 
-      <!-- font awesome cdn -->
-    <script src="https://kit.fontawesome.com/eb72676a6b.js" crossorigin="anonymous"></script>
+  <!-- font awesome cdn -->
+  <script src="https://kit.fontawesome.com/eb72676a6b.js" crossorigin="anonymous"></script>
 
-    <!-- tailwind cdn -->
-       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-       
-      <style type="text/tailwindcss">
-      @theme {
-        /* --color-clifford: #da373d; */
+  <!-- tailwind cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <style type="text/tailwindcss">
+    @theme {
+        --color-clr-1: #B68C5A;
+        --color-drk-3: #707070;
+        --color-drk-6: #E7E7E7;
+        --color-drk-4: #A0A0A0;
         --font-poppins: "Poppins", sans-serif;
         --font-ebgaramond: "EB Garamond", serif;
+        --background-image-banner: linear-gradient(
+        to bottom, 
+        rgba(17, 17, 17, 0.1), 
+        rgba(17, 17, 17, 1)
+      ), url('./images/banner.png');
       }
     </style>
 </head>
+
 <body class="mx-auto container">
-    <header>
-      <nav class="flex items-center justify-between --font-poppins">
-        <img src="./images/logo2.png">
-        <ul class="flex items-center gap-8 text-gray-400">
-          <li class="">Home</li>
-          <li>Services ></li>
-          <li>Cases ></li>
-          <li>Blog ></li>
-          <li>Concatc Us ></li>
-        </ul>
-        <button class="text-white bg-orange-300 p-3 rounded-3xl">Free Consultation</button>
-      </nav>
-    </header>
+  <!-- header section start -->
+  <header>
+    <!-- nav section start -->
+    <nav class="flex items-center justify-between font-poppins my-12">
+      <img src="./images/logo2.png">
+      <ul class="flex items-center gap-8 text-drk-3 ">
+        <li class="">Home</li>
+        <li>Services <i class="fa-solid fa-greater-than"></i></span></li>
+        <li>Cases <i class="fa-solid fa-greater-than"></i></li>
+        <li>Blog <i class="fa-solid fa-greater-than"></i></li>
+        <li>Concatc Us <i class="fa-solid fa-greater-than"></i></li>
+      </ul>
+      <button class="text-white bg-clr-1 p-5 rounded-lg">Free Consultation</button>
+    </nav>
+    <!-- nav section end -->
+
+    <!-- banner section start -->
+    <section id="banner" class="flex items-center justify-center bg-banner py-[103px] rounded-lg">
+      <div>
+        <h1 class="font-ebgaramond text-white text-7xl leading-[85px] font-extrabold text-center">We Provide
+          Effective<br>Legal Solutions</h1>
+        <p class="font-poppins text-drk-6 leading-6 text-center my-8">There are many variations of passages of Lorem
+          Ipsum available, but the majority<br>have suffered alteration in some form, by injected humour.</p>
+        <form>
+          <input type="text" placeholder="Search your sevices"
+            class="bg-white w-5/7 p-5 rounded-lg text-drk-4 leading-6">
+          <button class="text-white bg-clr-1 p-5 rounded-lg w-1/4 ml-3">Search</button>
+        </form>
+      </div>
+    </section>
+    <!-- banner section end -->
+  </header>
+  <!-- header section end -->
 </body>
+
 </html>
